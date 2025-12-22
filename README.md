@@ -1,172 +1,76 @@
-🧠 Product Recommendation System (User-Based Collaborative Filtering)
+User-Based Product Recommendation System
 
-A User-Based Product Recommendation System that predicts product category preferences for users by identifying similar users using cosine similarity on behavioral and demographic features.
-The application is built using Python, Scikit-learn, and Streamlit with an interactive web interface.
+A production-style collaborative filtering recommendation system that predicts relevant product categories for users by analyzing behavioral similarity using cosine similarity.
+Built with Python, Scikit-learn, and Streamlit for interactive, real-time recommendations.
 
-📌 Project Overview
+✨ Why This Project?
 
-This project recommends product categories to a selected user by analyzing the preferences of most similar users.
-It uses collaborative filtering and works best for one-user–one-category datasets, making it suitable for academic mini projects and demonstrations.
+Personalized recommendations are core to modern e-commerce platforms.
+This project demonstrates how user similarity can be leveraged to infer preferences without explicit product ratings, using only behavioral and demographic signals.
 
-🚀 Features
+🧠 How It Works
 
-👤 User-based collaborative filtering
+User behavioral data is preprocessed and normalized
 
-📊 Behavioral and demographic feature analysis
+Cosine similarity is computed between users
 
-🧮 Cosine similarity for user similarity measurement
+The top-K most similar users are identified
 
-⚖️ Feature normalization using StandardScaler
+Product categories are recommended via majority voting
 
-🖥️ Interactive Streamlit web application
+Technique: User-Based Collaborative Filtering
 
-🔍 Displays similar users with similarity scores
+🚀 Key Highlights
 
-🛒 Predicts top N product categories
+Clean end-to-end recommendation pipeline
 
-🧠 Recommendation Technique
+Feature scaling with StandardScaler
 
-Approach: User-Based Collaborative Filtering
+Similarity computation using cosine_similarity
 
-Workflow:
+Interactive UI built with Streamlit
 
-Load user behavioral dataset
+Designed for one-user–one-category datasets
 
-Select numerical features
-
-Normalize features using StandardScaler
-
-Compute cosine similarity between users
-
-Identify top similar users
-
-Recommend product categories using majority voting
-
-📂 Project Structure
+🗂 Repository Structure
 Product_Recommendation/
-│
 ├── data/
 │   └── user_personalized_features.csv
-│
 ├── app.py
 ├── test.py
 ├── requirements.txt
 └── README.md
 
-📊 Dataset Description
-
-Each row in the dataset represents a single user profile containing demographic and behavioral information.
-
-Features Used:
-
-Age
-
-Income
-
-Purchase Frequency
-
-Average Order Value
-
-Total Spending
-
-Time Spent on Site (minutes)
-
-Pages Viewed
-
-Last Login Days Ago
-
-Product Category Preference (Target)
-
-🛠️ Technologies Used
-
-Python
-
-Pandas
-
-NumPy
-
-Scikit-learn
-
-Streamlit
-
-Cosine Similarity
-
-StandardScaler
-
-▶️ How to Run the Project
-1️⃣ Clone the Repository
-git clone https://github.com/your-username/Product_Recommendation.git
-cd Product_Recommendation
-
-2️⃣ Install Dependencies
+🛠 Tech Stack
+Layer	Technology
+Language	Python
+Data Processing	Pandas, NumPy
+Machine Learning	Scikit-learn
+Similarity Metric	Cosine Similarity
+Interface	Streamlit
+▶️ Run Locally
 pip install -r requirements.txt
-
-3️⃣ Run the Streamlit App
 streamlit run app.py
 
-🖥️ Application Output
+📌 Current Limitations
 
-Select a User Index
+Cold-start issue for new users
 
-Choose number of predicted categories
+No item-level similarity modeling
 
-Click Predict Preferences
+Assumes one category per user
 
-View:
+🔮 Future Scope
 
-Selected user profile
+Hybrid recommendation (user + item based)
 
-Similar users with similarity scores
+Real-time behavior tracking
 
-Recommended product categories
+Model evaluation metrics
 
-📈 Sample Output
-
-Similar Users
-
-User 809 → Similarity: 0.948
-
-User 274 → Similarity: 0.879
-
-Predicted Product Categories
-
-Apparel (chosen by 3 similar users)
-
-Books (chosen by 2 similar users)
-
-⚠️ Limitations
-
-Cold-start problem for new users
-
-Does not consider item-level similarity
-
-Best suited for one-category-per-user datasets
-
-🔮 Future Enhancements
-
-Item-based collaborative filtering
-
-Hybrid recommendation system
-
-Real-time interaction tracking
-
-Database integration
-
-Model evaluation metrics (Precision, Recall)
-
-🎓 Academic Use
-
-This project is suitable for:
-
-Machine Learning Mini Projects
-
-Data Science Laboratory Work
-
-Recommendation System Demonstrations
-
-Pre-final and Final Year Engineering Projects
+Database and cloud deployment
 
 👩‍💻 Author
 
 Geethanjali M
-B.E. Student | Machine Learning Enthusiast
+B.E. Student | Machine Learning & Data Science
