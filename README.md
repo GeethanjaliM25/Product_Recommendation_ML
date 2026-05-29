@@ -2,7 +2,6 @@ User-Based Product Recommendation System
 
 A production-style collaborative filtering recommendation system that predicts relevant product categories for users by analyzing behavioral similarity using cosine similarity.
 Built with Python, Scikit-learn, and Streamlit for interactive, real-time recommendations..
-
 ✨ Why This Project?
 
 Personalized recommendations are core to modern e-commerce platforms.
