@@ -1,4 +1,4 @@
-User-Based Product Recommendation System
+User-Based Product Recommendation System.
   
 A production-style collaborative filtering recommendation system that predicts relevant product categories for users by analyzing behavioral similarity using cosine similarity.
 Built with Python, Scikit-learn, and Streamlit for interactive, real-time recommendations.
